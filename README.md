@@ -22,11 +22,11 @@ To run the downloaded React project, follow these steps:
 
 4. **Install Axios**
 
-```bash
+    ```bash
     npm install axios
-```
+    ```
 
-4. **Start the Development Server**: React projects often come with development servers that allow you to preview your application locally. You can start the development server with the following command:
+5. **Start the Development Server**: React projects often come with development servers that allow you to preview your application locally. You can start the development server with the following command:
 
     ```bash
     npm start
@@ -34,4 +34,4 @@ To run the downloaded React project, follow these steps:
 
     This command will start the development server and open your React app in a web browser. By default, it usually runs at `http://localhost:3000`.
 
-5. **Stopping the Development Server**: To stop the development server, go back to your command line and press `Ctrl + C` (or `Cmd + C` on macOS). This will stop the server, and you can close the terminal window.
+6. **Stopping the Development Server**: To stop the development server, go back to your command line and press `Ctrl + C` (or `Cmd + C` on macOS). This will stop the server, and you can close the terminal window.
