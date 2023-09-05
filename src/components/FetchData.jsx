@@ -7,7 +7,7 @@ const FetchData = ({ cat }) => {
         await axios
             .get(
                 cat ? `https://newsapi.org/v2/top-headlines?country=in&category=${cat}&apiKey=29fd802688a44af78fadd562ca88adf7`
-                    : "https://newsapi.org/v2/top-headlines?country=in&apiKey=29fd802688a44af78fadd562ca88adf7"
+                    : "https://api.jsonbin.io/v3/qs/64f6e13de4033326cbd2766c"
             ).then((res) => setData(res.data.articles));
     };
     useEffect(() => {
