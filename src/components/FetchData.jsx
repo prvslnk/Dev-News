@@ -18,7 +18,7 @@ const FetchData = ({ cat }) => {
 
     return (
         <div style={{ margin: '120px auto', padding: '50px', border: '5px solid', borderRadius: '20px' }} className="container">
-            <h1 style={{ textAlign: "center" }}>
+            <h1 style={{ textAlign: "center", textTransform: "capitalize" }}>
                 <u>{cat} Top Headlines</u>
             </h1>
             <hr />
