@@ -6,8 +6,8 @@ const FetchData = ({ cat }) => {
     const fetchdata = async () => {
         await axios
             .get(
-                cat ? `https://newsapi.org/v2/top-headlines?country=in&category=${cat}&apiKey=fefcba94b42647ba8f8ed4e8d92643b3`
-                    : "https://newsapi.org/v2/top-headlines?country=in&apiKey=fefcba94b42647ba8f8ed4e8d92643b3"
+                cat ? `https://newsapi.org/v2/top-headlines?country=in&category=${cat}&apiKey=29fd802688a44af78fadd562ca88adf7`
+                    : "https://newsapi.org/v2/top-headlines?country=in&apiKey=29fd802688a44af78fadd562ca88adf7"
             ).then((res) => setData(res.data.articles));
     };
     useEffect(() => {
