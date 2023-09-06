@@ -6,8 +6,8 @@ const FetchData = ({ cat }) => {
     const fetchdata = async () => {
         await axios
             .get(
-                cat ? `https://newsapi.org/v2/top-headlines?country=in&category=${cat}&apiKey=f463419c4e4c4ebd96549c95688e979b`
-                    : "https://newsapi.org/v2/top-headlines?country=in&apiKey=29fd802688a44af78fadd562ca88adf7"
+                cat ? `https://saurav.tech/NewsAPI/top-headlines/category/${cat}/in.json`
+                    : "https://saurav.tech/NewsAPI/top-headlines/category/general/in.json"
             ).then((res) => setData(res.data.articles));
     };
     useEffect(() => {
