@@ -58,6 +58,23 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
 
+  <script>
+    document.getElementById("sendEmail").addEventListener("click", function () {
+      // Get the entered email address
+      var email = document.getElementById("email").value;
+
+      // Check if the email is valid
+      if (/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+        // Open the user's default email client with the "mailto" URL
+        var mailtoLink = "mailto:" + email;
+        window.location.href = mailtoLink;
+      } else {
+        // Display an error message if the email is not valid
+        alert("Please enter a valid email address.");
+      }
+    });
+  </script>
+
 </body>
 
 </html>

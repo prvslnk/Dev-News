@@ -16,7 +16,7 @@ const Login = () => {
                                     <h3 class="fw-normal mb-3 pb-3" style={{ letterSpacing: "1px" }} >Log in</h3>
 
                                     <div class="form-outline mb-4">
-                                        <input type="email" id="form2Example18" class="form-control form-control-lg" />
+                                        <input type="email" id="form2Example18" class="form-control form-control-lg" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required />
                                         <label class="form-label" for="form2Example18">Email address</label>
                                     </div>
 

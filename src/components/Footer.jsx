@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Footer = () => {
     return (
         <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -24,8 +25,8 @@ const Footer = () => {
                     <p>Monthly digest of what's new and exciting from us.</p>
                     <div className="d-flex flex-column flex-sm-row w-100 gap-2">
                         <label htmlFor="newsletter1" className="visually-hidden">Email address</label>
-                        <input id="newsletter1" type="text" className="form-control" placeholder="Email address" />
-                        <button className="btn btn-primary" type="button">Subscribe</button>
+                        <input type="email" id="email" className="form-control" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required placeholder="Email address" />
+                        <button id="sendEmail" className="btn btn-primary" type="button">Subscribe</button>
                     </div>
                 </form>
             </div>

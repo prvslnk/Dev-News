@@ -25,7 +25,7 @@ const Register = () => {
 
 
                     <div class="form-outline mb-4">
-                        <input type="email" id="form3Example3" class="form-control" />
+                        <input type="email" id="form3Example3" class="form-control" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required />
                         <label class="form-label" for="form3Example3">Email address</label>
                     </div>
 
